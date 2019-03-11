@@ -7,7 +7,9 @@
   text-decoration: none;
 }
 
-
+body{
+  margin: 0;
+}
 .row:after {
   content: "";
   display: table;
@@ -41,6 +43,8 @@
   background-color: #E74C3C;
   overflow: hidden;
   z-index:2;
+  margin: 0px;
+  width: 100%;
 }
 
 .topnav a {
@@ -67,8 +71,8 @@
    border: 5px solid #eaeaea;
    box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
    height: 600px;
-   width: auto;
-   margin: 0px auto 0;
+   width: 100%;
+   margin: 0px;
    overflow: visible;
    position: relative;
    z-index: -1;

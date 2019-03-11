@@ -40,6 +40,7 @@
 .topnav {
   background-color: #E74C3C;
   overflow: hidden;
+  z-index:2;
 }
 
 .topnav a {
@@ -67,9 +68,10 @@
    box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
    height: 600px;
    width: auto;
-   margin: 40px auto 0;
+   margin: 0px auto 0;
    overflow: visible;
    position: relative;
+   z-index: -1;
 }
 #hi{
 height:600px;

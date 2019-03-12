@@ -1,0 +1,35 @@
+img{
+  height:100%;
+  width:100%;
+}
+body{
+  margin: 0;
+}
+
+#text{
+     display: flex;
+     height: 100%;
+     align-items:center;
+     justify-content: center;
+     color: white;
+     font-weight: 400;
+     font-size: 70px;
+     font-family: serif;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #17202A;
+}
+
+.ok:hover .overlay {
+  opacity: 0.5;
+}

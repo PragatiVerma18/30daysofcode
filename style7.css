@@ -1,0 +1,62 @@
+body{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  color: #fec009;
+  flex-direction: column;
+  font-family: 'Nunito Sans';
+}
+h3{
+  background-blend-mode: multiply;
+}
+a{
+color: #fec009;
+text-decoration: none;
+}
+.logo{
+  width: 20vw;
+  padding: 2%;
+}
+.store{
+   width: 20vw;
+}
+@media only screen and (max-width: 600px){
+  .image {
+    width: 100%;
+  }
+  .logo {
+    width: 150px;
+  }
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.image {
+  -webkit-animation: rotation 40s infinite linear;
+  transition: all 2s ease-in-out;
+  width: 50%;
+  position: absolute;
+  z-index: -2;
+  opacity: 0.4;
+}
+@keyframes {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.animation-wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}

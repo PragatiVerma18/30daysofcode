@@ -1,0 +1,48 @@
+body{
+  background-color: #17202A;
+  margin: 0px;
+  background-image: url("https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+p{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #E74C3C;
+padding: 0;
+margin: 0;
+
+}
+img{
+  height: 100%;
+  width: 100%;
+}
+#bird{
+  background: url("http://minimalmonkey.com/lab/css3-animations/twitter-bird-sprite.png");
+  width: 150px;
+  height: 150px;
+  animation: fly 2s steps(4) infinite, forward 6s  linear infinite;
+}
+
+@keyframes fly {
+  0%
+  {
+    background-position: 0px;
+  }
+  100%{
+    background-position: 600px;
+  }
+}
+@keyframes forward {
+  0%{
+    transform: translateX(-100px);
+  }
+  100%{
+    transform: translateX(800px);
+  }
+}

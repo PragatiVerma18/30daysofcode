@@ -1,0 +1,32 @@
+body{
+  background-color: #17202A;
+
+}
+
+#walk{
+  background: url("img/walk.png");
+  width: 500px;
+  height: 1000px;
+  animation: walk 2s steps(7) infinite, forward 10s  linear infinite;
+}
+#road{
+  border: 7px dashed white;
+}
+
+@keyframes walk {
+  0%
+  {
+    background-position: 0px;
+  }
+  100%{
+    background-position: 3500px;
+  }
+}
+@keyframes forward {
+  0%{
+    transform: translateX(-100px);
+  }
+  100%{
+    transform: translateX(4000px);
+  }
+}

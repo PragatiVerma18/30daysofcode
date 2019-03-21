@@ -1,0 +1,41 @@
+body{
+  background-color: #E67E22;
+margin: 0px;
+}
+h1{
+  font-family: fantasy;
+  font-size: 40px;
+  margin: auto;
+  text-align: center;
+}
+
+#walk{
+  background: url("img/panda.png");
+  width: 179px;
+  height: 150px;
+  animation: walk 1s steps(9) infinite, forward 12s  linear infinite;
+  margin: 0px;
+}
+#road{
+  margin: 0px;
+  padding: 0px;
+  border: 7px dashed white;
+}
+
+@keyframes walk {
+  0%
+  {
+    background-position: 0px;
+  }
+  100%{
+    background-position: 1600px;
+  }
+}
+@keyframes forward {
+  0%{
+    transform: translateX(-100px);
+  }
+  100%{
+    transform: translateX(100vw);
+  }
+}

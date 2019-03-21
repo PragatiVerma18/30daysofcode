@@ -1,15 +1,18 @@
 body{
-  background-color: #17202A;
-
+  background-color: #F4D03F;
+margin: 0px;
 }
 
 #walk{
   background: url("img/walk.png");
   width: 500px;
-  height: 1000px;
-  animation: walk 2s steps(7) infinite, forward 10s  linear infinite;
+  height: 900px;
+  animation: walk 2s steps(7) infinite, forward 15s  linear infinite;
+  margin: 0px;
 }
 #road{
+  margin: 0px;
+  padding: 0px;
   border: 7px dashed white;
 }
 
@@ -24,9 +27,9 @@ body{
 }
 @keyframes forward {
   0%{
-    transform: translateX(-100px);
+    transform: translateX(-500px);
   }
   100%{
-    transform: translateX(4000px);
+    transform: translateX(100vw);
   }
 }
